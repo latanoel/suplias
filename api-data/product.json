@@ -1,0 +1,52 @@
+{
+    "code": 200,
+    "message": "",
+    "data": [
+        {
+            "_id": "5d582954363ab83411204837",
+            "sku_id": "81647086",
+            "name": "Ariel Detergent Powder 160g",
+            "case_count": 2,
+            "weight": 0,
+            "size": 0,
+            "mpu": 1,
+            "price": 1250,
+            "status": "active",
+            "upload_id": "5df757516cf11673713a67ab",
+            "brand_id": "5d5828cc363ab8e01520463d",
+            "created": 1566058836,
+            "modified": 1576490835,
+            "can_order": true,
+            "upload": {
+                "_id": "5df757516cf11673713a67ab",
+                "title": "3563071689.jpg",
+                "path": "images/3563071689.jpg",
+                "tag": "some-tag",
+                "created": 1576490833
+            }
+        },
+        {
+            "_id": "5d582954363ab83411204838",
+            "sku_id": "81647086",
+            "name": "Some other product",
+            "case_count": 6,
+            "weight": 0,
+            "size": 0,
+            "mpu": 1,
+            "price": 1100,
+            "status": "active",
+            "upload_id": "5df757516cf11673713a67ab",
+            "brand_id": "5d5828cc363ab8e01520463d",
+            "created": 1566058836,
+            "modified": 1576490835,
+            "can_order": true,
+            "upload": {
+                "_id": "5df757516cf11673713a67ac",
+                "title": "default.png",
+                "path": "images/default.png",
+                "tag": "some-tag",
+                "created": 1576490833
+            }
+        }
+    ]
+}

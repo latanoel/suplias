@@ -1,0 +1,82 @@
+{
+    "code": 200,
+    "message": "",
+    "data": {
+        "_id": "5d57f589363ab8ae092046e4",
+        "phone": "07034456172",
+        "name": "Marvelous Stores",
+        "person": "Marvelous Ottah",
+        "address": "14, Rosanwo Street, Aguda, Surulere",
+        "status": "active",
+        "user_id": "5d57f589363ab8ae092046dc",
+        "location_id": "5d56e2b8363ab86d672047dd",
+        "store_type_id": "5d56e898363ab8616d2045ee",
+        "created": 1566045577,
+        "modified": 1578955700,
+        "store_type": {
+            "_id": "5d56e898363ab8616d2045ee",
+            "name": "Kiosk",
+            "description": "Kiosk.",
+            "status": "active",
+            "created": 1565976728,
+            "buyer_count": 1
+        },
+        "location": {
+            "_id": "5d56e2b8363ab86d672047dd",
+            "name": "Surulere",
+            "lga": "Surulere",
+            "state": "Lagos",
+            "status": "active",
+            "created": 1565975224,
+            "buyer_count": 3
+        },
+        "order_count": {
+            "count": {
+                "total": 2,
+                "pending": 1,
+                "completed": 1,
+                "cancelled": 0,
+                "deleted": 0,
+                "draft": 0
+            },
+            "value": {
+                "total": 6561,
+                "pending": 4211,
+                "completed": 2350,
+                "cancelled": 0,
+                "deleted": 0,
+                "draft": 0
+            },
+            "average": {
+                "total": 3280.5,
+                "pending": 4211,
+                "completed": 2350,
+                "cancelled": 0,
+                "deleted": 0,
+                "draft": 0
+            }
+        },
+        "average_rating": 3,
+        
+        "ledgers": [
+            {
+                "_id": "5d57f589363ab8ae092046eb",
+                "balance": 4200,
+                "owner": "5d57f589363ab8ae092046e4",
+                "head": "0001",
+                "subhead": "0000",
+                "created": 1566045577,
+                "modified": 1578646876
+            },
+            {
+                "_id": "5d6cf138363ab8aa3400eace",
+                "balance": -9596.1705,
+                "owner": "5d57f589363ab8ae092046e4",
+                "head": "0000",
+                "subhead": "1000",
+                "created": 1567420728,
+                "modified": 1567420728
+            }
+        ]
+    }
+}

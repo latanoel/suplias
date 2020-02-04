@@ -1,0 +1,56 @@
+{
+    "code": 200,
+    "message": "",
+    "data": {
+        "code": 200,
+        "message": "",
+        "data": [
+            {
+                "_id": "5e1edf0e6cf11648e5325057",
+                "ref": "FC09910",
+                "payment": "CASH",
+                "tag": "pending",
+                "amount": 4700,
+                "manufacturer_id": "5d56de3d363ab8356d2045d8",
+                "seller_id": "5d57f76b363ab8790f204686",
+                "seller_area_id": "5d5809d6363ab85710204708",
+                "buyer_id": "5d57f589363ab8ae092046e4",
+                "sales_officer_id": "5d580b52363ab8fa1120462f",
+                "created": 1579081486,
+                "modified": 1579081486,
+                "seller": {
+                    "_id": "5d57f76b363ab8790f204686",
+                    "name": "Suplias",
+                    "address": "Opebi, Ikeja",
+                    "status": "active",
+                    "user_id": "5d56d92e363ab89e65204657",
+                    "manufacturer_id": "5d56de3d363ab8356d2045d8",
+                    "created": 1566046059
+                }
+            },
+            {
+                "_id": "5e1edf0e6cf11648e53250c0",
+                "ref": "FC09882",
+                "payment": "CASH",
+                "tag": "completed",
+                "amount": 2350,
+                "manufacturer_id": "5d56de3d363ab8356d2045d8",
+                "seller_id": "5d57f76b363ab8790f204686",
+                "seller_area_id": "5d5809d6363ab85710204708",
+                "buyer_id": "5d57f589363ab8ae092046e4",
+                "sales_officer_id": "5d580b52363ab8fa1120462f",
+                "created": 1579081486,
+                "modified": 1579081486,
+                "seller": {
+                    "_id": "5d57f76b363ab8790f204686",
+                    "name": "Suplias",
+                    "address": "Opebi, Ikeja",
+                    "status": "active",
+                    "user_id": "5d56d92e363ab89e65204657",
+                    "manufacturer_id": "5d56de3d363ab8356d2045d8",
+                    "created": 1566046059
+                }
+            }
+        ]
+    }
+}

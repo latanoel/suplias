@@ -1,0 +1,20 @@
+{
+    "code": 200,
+    "message": "",
+    "data": [
+        {
+            "_id": "5dab082e363ab86c6a36afc9",
+            "quantity": 12,
+            "product_id": "5d582954363ab83411204837",
+            "weekly_id": "5e1491756cf11675a34952f8",
+            "created": 1571489838
+        },
+        {
+            "_id": "5dab088d363ab8ef1937ecaa",
+            "quantity": 4,
+            "product_id": "5d582954363ab83411204838",
+            "weekly_id": "5e1491756cf11675a34952f8",
+            "created": 1571489933
+        }
+    ]
+}
