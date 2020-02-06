@@ -12,6 +12,7 @@ import {
 } from '@ui-kitten/components';
 import { TextStyleProps } from '@ui-kitten/components/ui/support/typings';
 
+
 const loadOrderItem = async () => {
     let result = new Promise((resolve, reject) => {
         // CALL TO `FAKE` API
@@ -21,6 +22,9 @@ const loadOrderItem = async () => {
     })
     return await result
 }
+
+const EditIcon = (props) => (<Icon name='edit' {...props} width={20} height={20} fill="#C4CAD0" />)
+const CloseIcon = (props) => (<Icon name='close' {...props}  width={20} height={20} fill="#EE3939" />)
 
 const Order = (props) => {
     const [product, setProduct] = useState(null)
@@ -42,13 +46,13 @@ const Order = (props) => {
     }, []);
 
     return (
-        <Card {...TextStyleProps} style={styles.card}>
+        <View style={styles.card}>
 
             <View>
                 <Text style={styles.cardHeaderText} category='h5'>Order #FC09882</Text>
             </View>
 
-            <View style={styles.meta}>
+            <View style={styles.infoRow} >
                 <View style={{ width: '50%' }}>
                     <Text style={styles.infoHeader}>Date</Text>
                     <Text style={styles.infoText}>Aug 3, 2019</Text>
@@ -59,21 +63,48 @@ const Order = (props) => {
                 </View>
             </View>
 
-            <View>
+            <View style={styles.distributorRow}>
                 <View>
                     <Text style={styles.infoHeader}>Distributor</Text>
                     <Text style={styles.infoText}>Suplias</Text>
                 </View>
             </View>
 
-            <View style={{flexDirection: 'row'}}>
-                <View>
-                    <Image style={{width: 80, height: 80}} source={require('../assets/img/3563071689.jpg')}/>
+            <View style={styles.productRow}>
+                <View style={styles.productItem}>
+                    <View style={styles.productImageWrapper}>
+                        <Image style={styles.productImage} source={require('../assets/img/3563071689.jpg')}/>
+                    </View>
+                    <View style={styles.productContentWrapper}>
+                        <Text category='s2'>Nivea Body Lotion Cocoa Butter Milk 400ml (8 X 1) - 89156</Text>
+                        <View style={{flexDirection: 'row', justifyContent:'space-between', marginTop: 8}}>
+                            <View style={{flexDirection: 'row', justifyContent:'flex-start'}}>
+                                <Text category='h6' style={{marginRight:8}}>₦1,100</Text>
+                                <Text appearance='hint' style={{alignSelf:'center', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>10 Units <EditIcon /></Text>
+                            </View>
+                            <Text style={{alignSelf:'center'}}><CloseIcon /></Text>
+                        </View>
+                    </View>
+                </View>
+                <View style={styles.productItem}>
+                    <View style={styles.productImageWrapper}>
+                        <Image style={styles.productImage} source={require('../assets/img/3563071689.jpg')}/>
+                    </View>
+                    <View style={styles.productContentWrapper}>
+                        <Text category='s2'>Nivea Body Lotion Cocoa Butter Milk 400ml (8 X 1) - 89156</Text>
+                        <View style={{flexDirection: 'row', justifyContent:'space-between', marginTop: 8}}>
+                            <View style={{flexDirection: 'row', justifyContent:'flex-start'}}>
+                                <Text category='h6' style={{marginRight:8}}>₦1,100</Text>
+                                <Text appearance='hint' style={{alignSelf:'center', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>10 Units <EditIcon /></Text>
+                            </View>
+                            <Text style={{alignSelf:'center'}}><CloseIcon /></Text>
+                        </View>
+                    </View>
                 </View>
             </View>
 
 
-        </Card>
+        </View>
     )
 }
 
@@ -82,10 +113,26 @@ export default Order;
 const styles = StyleSheet.create({
     card: {
         marginTop: 30,
-        paddingHorizontal: 0
+        paddingHorizontal: 0,
+        paddingVertical: 30,
+        backgroundColor: '#FFFFFF',
+        borderRadius: 5,
+        borderColor: '#e4e9f2',
+        borderStyle: 'solid',
+        borderWidth: 1
     },
     cardHeaderText: {
-        paddingBottom: 10
+        paddingBottom: 10,
+        paddingHorizontal: 15,
+        borderBottomColor: '#e4e9f2',
+        borderBottomStyle: 'solid',
+        borderBottomWidth: 1
+    },
+    infoRow: {
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        marginBottom: 15,
+        paddingHorizontal: 15
     },
     infoHeader: {
         fontWeight: "bold",
@@ -97,9 +144,34 @@ const styles = StyleSheet.create({
         fontSize: '1.05em',
         color: '#171C34',
     },
-    meta: {
+    distributorRow: {
+        paddingHorizontal: 15,
+        marginBottom: 15
+    },
+    productRow: {
+        borderTopColor: '#e4e9f2',
+        borderTopStyle: 'solid',
+        borderTopWidth: 1
+    },
+    productItem: {
         flexDirection: 'row',
-        justifyContent: 'space-evenly'
+        borderBottomColor: '#e4e9f2',
+        borderBottomStyle: 'solid',
+        borderBottomWidth: 1
+    },
+    productImageWrapper: {
+        alignSelf: 'center',
+        alignContent: 'center',
+    },
+    productImage: {
+        width: 80, height: 80,
+    },
+    productContentWrapper: {
+        borderLeftColor: '#e4e9f2',
+        borderLeftStyle: 'solid',
+        borderLeftWidth: 1,
+        flexShrink: 1,
+        padding: 8,
     },
     well: {
         borderRadius: 4,
